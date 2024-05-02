@@ -8,3 +8,10 @@
 img {
   max-width: 100%;
 }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  place-content: center;
+}
