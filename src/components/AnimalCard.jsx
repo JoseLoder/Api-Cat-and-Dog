@@ -18,9 +18,9 @@ export function AnimalCard({ url, type }) {
     return (
         <article>
             <figure>
-                <img src={animal} alt="Random Animal" />
+                <img src={animal} alt={"Random " + type} />
             </figure>
-            <button onClick={handleAnimal}>New Random Animal</button>
+            <button onClick={handleAnimal}>New Random {type}</button>
         </article>
     )
 }
