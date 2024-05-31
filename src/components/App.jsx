@@ -9,6 +9,7 @@ function App() {
 
   useEffect(() => {
     let promises = [];
+
     for (let i = 0; i < 5; i++) {
       promises.push(getDog().then((data) => ({ type: 'dog', url: data })));
       promises.push(getCat().then((data) => ({ type: 'cat', url: data })));
@@ -17,6 +18,7 @@ function App() {
     Promise.all(promises).then((newAnimals) => {
       setAnimals(newAnimals);
     });
+
   }, []);
 
   return (
